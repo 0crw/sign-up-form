@@ -5,53 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>   
     <title>Sign-up Form</title>
 </head>
 <body>
-    <div class="main-container">
+    <div class="main">
         <div class="left-side">
-            <img id="bg-left-img" src="/medialand/pexelaside.jpg" alt="background image">
+            <div class="img">
+                <div class="logo">
+                    <img id="crowlogo" src="/medialand/origami.png" alt="crow icon">
+                    <h1 id="CRW">CRW</h1>
+                </div>
+                <div class="credits">
+                    <p>Photo by Crowwo on Unsplash</p>
+                </div>
+            </div>    
         </div>
         <div class="right-side">
-            <div class="description-head-form">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</p>
+            <div class="main-title">
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> 
+                    Sign up <em>now</em> to get started.
+                </h3>
             </div>
-            <div class="title-head-form">
-                <p>You <em>know</em> you want to.</p>
+            <div class="sec-title">
+                <h3>You <em>know</em> you want to.</h3>
             </div>
-            <div class="content-form">
-                <p>Let's do this!</p>
-                <form id="main-form" action="#" method="post">
-                    <div class="primary-input">
+            <div class="form">
+                <form id="my-form" action="#">
+                    <div class="form-title">
+                        <h3>Let's do this!</h3>
+                    </div>
+                    <div class="inset">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Your First Name">
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="inset">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Your Last Name">
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
-                    <div class="secondary-input">
+                    <div class="inset">
+                        <label for="number-phone">NUMBER PHONE</label>
+                        <input type="number" name="number-phone" id="number-phone" minlength="10" maxlength="10">
+                    </div>
+                    <div class="inset">
                         <label for="user-email">EMAIL</label>
-                        <input type="email" id="user-email" name="user-email" placeholder="you@example.it">
-                        <label for="number-phone">PHONE NUMBER</label>
-                        <input type="number" id="number-phone" name="number-phone" placeholder="000-1234567">
+                        <input type="email" name="user-email" id="user-email" required>
                     </div>
-                    <div class="security-input">
+                    <div class="inset">
                         <label for="user-password">PASSWORD</label>
-                        <input type="password" id="user-password" name="user-password">
-                        <label for="check-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="check-password" name="check-password">
+                        <input type="password" name="user-password" id="user-password" minlength="6" required>
+                    </div>
+                    <div class="inset">
+                        <label for="check-password">CONFIRM PASSOWORD</label>
+                        <input type="password" name="check-password" id="check-password" minlength="6" required>
                     </div>
                 </form>
             </div>
-            <div class="below-form">
-                <div class="new-account">
-                    <button type="submit" form="main-form">Create Account</button>
-                </div>
-                <div class="already-account">
-                    <p>Already have an account? <a href="#"><em>Log In</em></a></p>
-                </div>
+            <div class="form-buttons">
+                <button id="my-form" class="form-btn" type="submit">Create Account</button>
+                <h3>Already have an account? <a id="logIn" href="#">Log in</a></h3>
             </div>
-        </div>
-    </div>   
+        </div>    
+    </div>
+    
 </body>
 </html>
