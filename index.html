@@ -13,7 +13,7 @@
             <div class="img">
                 <div class="logo">
                     <img id="crowlogo" src="/medialand/origami.png" alt="crow icon">
-                    <h1 id="CRW">CRW</h1>
+                    <p id="CRW">#22</p>
                 </div>
                 <div class="credits">
                     <p>Photo by Crowwo on Unsplash</p>
@@ -22,7 +22,8 @@
         </div>
         <div class="right-side">
             <div class="main-title">
-                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> 
+                <h3>This is not a real online service! You know you need something like this in your life to 
+                    help you realize your deepest dreams.<br> 
                     Sign up <em>now</em> to get started.
                 </h3>
             </div>
@@ -30,42 +31,41 @@
                 <h3>You <em>know</em> you want to.</h3>
             </div>
             <div class="form">
+                <div class="form-title">
+                    <br><br><h3>Let's do this!</h3><br><br>
+                </div>
                 <form id="my-form" action="#">
-                    <div class="form-title">
-                        <h3>Let's do this!</h3>
-                    </div>
-                    <div class="inset">
+                    <div class="items">
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" name="first-name" id="first-name" required>
                     </div>
-                    <div class="inset">
+                    <div class="items">
                         <label for="last-name">LAST NAME</label>
                         <input type="text" name="last-name" id="last-name" required>
                     </div>
-                    <div class="inset">
+                    <div class="items">
                         <label for="number-phone">NUMBER PHONE</label>
                         <input type="number" name="number-phone" id="number-phone" minlength="10" maxlength="10">
                     </div>
-                    <div class="inset">
+                    <div class="items">
                         <label for="user-email">EMAIL</label>
                         <input type="email" name="user-email" id="user-email" required>
                     </div>
-                    <div class="inset">
+                    <div class="items">
                         <label for="user-password">PASSWORD</label>
                         <input type="password" name="user-password" id="user-password" minlength="6" required>
                     </div>
-                    <div class="inset">
-                        <label for="check-password">CONFIRM PASSOWORD</label>
+                    <div class="items">
+                        <label for="check-password">CONFIRM PASSWORD</label>
                         <input type="password" name="check-password" id="check-password" minlength="6" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button  class="form-btn" type="submit">Create Account</button>
+                        <h3>Already have an account? <a id="logIn" href="#"><br>Log in</a></h3>
                     </div>
                 </form>
             </div>
-            <div class="form-buttons">
-                <button id="my-form" class="form-btn" type="submit">Create Account</button>
-                <h3>Already have an account? <a id="logIn" href="#">Log in</a></h3>
-            </div>
         </div>    
-    </div>
-    
+    </div>  
 </body>
 </html>
